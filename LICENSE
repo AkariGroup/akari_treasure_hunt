@@ -1,4 +1,4 @@
-Copyright 2024 XXXXX.
+Copyright 2024 Amane Nakamura,Teppei Kanda.
 
 Licensed under the Apache License, Version 2.0 (the “License”);
 you may not use this file except in compliance with the License.
@@ -12,4 +12,4 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-NOTICE: THIS FILE HAS BEEN MODIFIED BY TOYOTA MOTOR CORPORATION UNDER COMPLIANCE WITH THE APACHE LICENCE Version 2.0 FROM THE ORIGINAL WORK (Link).
+NOTICE: THIS FILE HAS BEEN MODIFIED BY TOYOTA MOTOR CORPORATION UNDER COMPLIANCE WITH THE APACHE LICENCE Version 2.0 FROM THE ORIGINAL WORK (https://github.com/AkariGroup/akari_yolo_inference/blob/main/yolo.py).
