@@ -10,7 +10,7 @@ AKARIと宝探しゲームで勝負できるアプリです。
 `. venv/bin/activate`  
 `pip install -r requirements.txt`  
 ## 配置方法
-![AKARI_Setting.jpg]()
+![AKARI_Setting.jpg](https://github.com/tet430/akari_treasure_hunt/blob/tet430-patch-1/AKARI_setting.jpg)
 
 ## 起動方法
 1. `source venv/bin/activate`  
