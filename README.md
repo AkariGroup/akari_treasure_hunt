@@ -3,9 +3,9 @@
 AKARIと宝探しゲームで勝負できるアプリです。  
 
 ## セットアップ方法
-1.submoduleの更新  
+1. submoduleの更新  
 `git submodule update --init`  
-2.仮想環境の作成  
+2. 仮想環境の作成  
 `python3 -m venv venv`  
 `. venv/bin/activate`  
 `pip install -r requirements.txt`  
@@ -13,7 +13,7 @@ AKARIと宝探しゲームで勝負できるアプリです。
 ![AKARI_Setting.jpg](https://github.com/tet430/akari_treasure_hunt/blob/tet430-patch-1/AKARI_setting.jpg)
 
 ## 起動方法
-1. `source venv/bin/activate`  
+1. `. venv/bin/activate`  
 を実施後、下記を実行。  
 
 2. 問題を別ウィンドウにて起動
