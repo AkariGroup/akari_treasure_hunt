@@ -186,22 +186,7 @@ class OakdYolo(object):
                     frame,
                     (detection.xmin, detection.ymin, detection.xmax, detection.ymax),
                 )
-                #cv2.putText(
-                #    frame,
-                #    self.labels[detection.label],
-                #    (bbox[0] + 10, bbox[1] + 20),
-                #    cv2.FONT_HERSHEY_TRIPLEX,
-                #    0.5,
-                #    255,
-                #)
-                #cv2.putText(
-                #    frame,
-                #    f"{int(detection.confidence * 100)}%",
-                #    (bbox[0] + 10, bbox[1] + 40),
-                #    cv2.FONT_HERSHEY_TRIPLEX,
-                #    0.5,
-                #    255,
-                #)
+                
                 cv2.rectangle(
                     frame, (bbox[0], bbox[1]), (bbox[2], bbox[3]), (255, 255, 255), 3
                 )
