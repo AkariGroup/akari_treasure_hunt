@@ -36,6 +36,16 @@ def main() -> None:
         type=int,
     )
     args = parser.parse_args()
+　　　　　　　　model_path = "model/treasure_hunt.blob"
+    config_path = "config/treasure_hunt.json"
+    download_file(
+        model_path,
+        "https://github.com/AkariGroup/akari_yolo_models/raw/main/treasure_hunt/treasure_hunt.blob",
+    )
+    download_file(
+        config_path,
+        "https://github.com/AkariGroup/akari_yolo_models/raw/main/treasure_hunt/treasure_hunt.json",
+    )
 
     end = False
     desired_labels = {0, 1}
