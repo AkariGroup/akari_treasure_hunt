@@ -2,8 +2,9 @@
 import argparse
 import cv2
 import time
-from oakd_yolo.oakd_yolo import OakdYolo
+from oakd_yolo import OakdYolo
 from akari_client import AkariClient
+from lib.akari_yolo_lib.util import download_file
 
 # ヘッドを2回頷かせる関数
 def nod_head(joints, duration=1):
@@ -15,29 +16,14 @@ def nod_head(joints, duration=1):
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "-m",
-        "--model",
-        help="Provide model name or model path for inference",
-        default="yolov4_tiny_coco_416x416",
-        type=str,
-    )
-    parser.add_argument(
-        "-c",
-        "--config",
-        help="Provide config path for inference",
-        default="json/yolov4-tiny.json",
-        type=str,
-    )
-    parser.add_argument(
         "-f",
         "--fps",
         help="Camera frame fps. This should be smaller than nn inference fps",
         default=10,
-        type=int,
-    )
+        type=int,)
     args = parser.parse_args()
-　　　　　　　　model_path = "model/treasure_hunt.blob"
-    config_path = "config/treasure_hunt.json"
+    model_path = "model/treasure_hunt.blob"
+    config_path = "json/treasure_hunt.json"
     download_file(
         model_path,
         "https://github.com/AkariGroup/akari_yolo_models/raw/main/treasure_hunt/treasure_hunt.blob",
@@ -59,7 +45,7 @@ def main() -> None:
     joints.set_servo_enabled(pan=True, tilt=True)
     joints.move_joint_positions(pan=0, tilt=0.32)
 
-    oakd_yolo = OakdYolo(args.config, args.model, args.fps)
+    oakd_yolo = OakdYolo(config_path, model_path, args.fps)
     try:
         while not end:
             frame = None
