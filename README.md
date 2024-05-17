@@ -10,7 +10,7 @@ AKARIと宝探しゲームで勝負できるアプリです。
 `. venv/bin/activate`  
 `pip install -r requirements.txt`  
 ## 配置方法
-![AKARI_Setting.jpg](jpg/AKARI_setting.jpg)
+![AKARI_Setting.jpg](jpg/akari_tresurehunt.jpg)
 
 ## 起動方法
 1. `. venv/bin/activate`  
@@ -20,9 +20,6 @@ AKARIと宝探しゲームで勝負できるアプリです。
 
 3. 物体認識を実行する  
 `python3 treasure_hunt.py`
-引数は下記を指定可能
-- `-m`,`--model:` オリジナルのYOLO認識モデル(.blob)を用いる場合にパスを指定。指定しない場合`key_candy_best.blob`が使用される。　
-- `-c`,`--config:` オリジナルのYOLO認識ラベル(.json)を用いる場合にパスを指定。指定しない場合`key_candy_best.json`が使用される。　
 
 ## その他
 このアプリケーションは愛知工業大学 情報科学部 知的制御研究室により作成されたものです。  
