@@ -13,10 +13,11 @@ AKARIと宝探しゲームで勝負できるアプリです。
 ![AKARI_Setting.jpg](jpg/akari_tresurehunt.jpg)
 
 ## 起動方法
-1. `. venv/bin/activate`  
-を実施後、下記を実行。  
+1. 仮想環境の有効化  
+`. venv/bin/activate`
 
-2. 問題を別ウィンドウにて起動
+2. 問題を別ウィンドウにて起動  
+questionsディレクトリから candy.mp4 もしくは key.mp4を選択して画面に映す
 
 3. 物体認識を実行する  
 `python3 treasure_hunt.py`
