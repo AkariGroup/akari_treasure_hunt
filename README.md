@@ -1,5 +1,5 @@
 
-# akari_treasure_hant
+# akari_treasure_hunt
 AKARIと宝探しゲームで勝負できるアプリです。  
 
 ## セットアップ方法
